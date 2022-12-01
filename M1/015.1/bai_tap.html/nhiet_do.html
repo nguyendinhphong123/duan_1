@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Temperature = function(ts_do_c){
+            this.do_c = ts_do_c;
+            
+
+            this.getTinh_do_F = function(){
+                let do_f = ts_do_c * 9/5 + 32; 
+                return do_f;
+            }
+            this.getTinh_do_kenvin = function(){
+                let do_kenvin = ts_do_c + 273.15;
+                return do_kenvin;
+            }
+        }
+        let Temperature1 = new Temperature(25);
+        console.log("Nhiệt độ F: " + Temperature1.getTinh_do_F());
+        console.log("Nhiệt độ k: " + Temperature1.getTinh_do_kenvin());
+    </script>
+</body>
+</html>

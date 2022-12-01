@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //      for (var i = 1; i <= 10; i++){
+    //     var product = 5 * i;
+    //     document.write("5 x " +i + "=" +product);
+    // }
+        let a = "<table border = 1>";
+    for(let i = 1; i <= 10; i++){
+        a = a + "<tr>";
+        for(let j = 1; j <= 10; j++){
+            a = a +"<td>" + j + "*" + i + "=" + i * j + "</td>";
+        }
+        a = a + ('<tr>');
+    }
+    a = a + "</table>";
+    document.write(a);
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    select {
+        margin-left: 47px;
+    }
+
+    element.style {
+        margin-left: 50px;
+    }
+
+    th {
+        width: 172px;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="" id="tien">
+            </td>
+            <td>
+                <select id="select_1">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="select_2">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+            <td>
+                <input onclick="Convert()" type="button" value="Convert">
+
+            </td>
+
+        </tr>
+    </table>
+    <table>
+        <td>
+            <p>Kết quả:</p>
+        </td>
+        <td id="ketqua"></td>
+    </table>
+
+
+    <script>
+        function Convert() {
+            var select_1 = document.getElementById('select_1').value;
+            var select_2 = document.getElementById('select_2').value;
+            var tien = document.getElementById('tien').value;
+            var change = 0;
+            var money = 23000;
+            if (tien == '') {
+
+
+                change = 'ban chua nhap tien';
+            }
+            else if (select_1 == 'VND' && select_2 == 'USD') {
+                change = tien / money + ' USD';
+            } else if (select_1 == 'USD' && select_2 == 'VND') {
+                change = tien * money + ' VND';
+            } else {
+                change = "ban phai thay doi gia tri"
+            }
+            document.getElementById("ketqua").innerHTML = change;
+        }
+    
+    </script>
+
+</body>
+
+</html>

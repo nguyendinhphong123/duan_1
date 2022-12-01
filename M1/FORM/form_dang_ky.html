@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form đăng ký</h1>
+    <form action="">
+    <div class="form-group">
+        <label for="fullname">Họ và tên</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required> 
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="age">Tuổi</label><br>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+    </div>
+    <div class="form-group">
+        <label for="gender">Giới tính</label><br>
+        <input type="radio" id="male" name="gender" required>
+        <label for="male">Nam</label>
+        <input type="radio" id="famale" name="gender" required>
+        <label for="male">Nữ</label>
+    </div>
+   <div class="form-group">
+        <label for="birthday">Sinh nhật</label><br>
+        <input type="date" id="birthday" name="birthday" required>
+    </div>
+    <div class="form-group">
+        <label for="code">Ngôn ngữ yêu thích</label><br>
+        <input type="checkbox" name="code_language" value="html" id="html" required>
+        <label for="html">Html</label>
+        <input type="checkbox" name="code_language" value="html" id="css" required>
+        <label for="css">Css</label>
+        <input type="checkbox" name="code_language" value="html" id="php" required>
+        <label for="php">Php</label>
+        <input type="checkbox" name="code_language" value="html" id="reactjs" required>
+        <label for="reactjs">ReactJs</label>
+    </div>
+    <div class="form-group">
+        <label for="my_color">Màu yêu thích</label><br>
+        <input type="color" id="my_color" name="my_color" required>
+    </div>
+    <div class="form-group">
+        <label for="my_city">Sống tại</label><br>
+        <select name="my_city" id="my_city">
+            <option value="1" selected>Chọn</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Tp.Hcm</option>
+            <option value="3">Đà Nẵng</option>
+            <option value="4">Huế</option>
+        </select>
+    </div>
+    <div class="form">
+        <label for="">Mục tiêu sự nghiệp của bạn là gì?</label><br>
+        <textarea name="my_goals" id="" cols="30" rows="5" placeholder="5 mục tiêu quan trọng của bạn là gì?"></textarea>
+
+    </div>
+    <br>
+    <input type="submit" value="Đăng ký tài khoản">
+    </form>
+    <br>
+    <a href="login.html">Đăng nhập</a>
+</body>
+</html>

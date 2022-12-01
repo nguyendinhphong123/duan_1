@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <script>
+        let kiem_tra = prompt('Nhập gì đó đi');
+        function kiem_tra_so(chuoi) {
+            let new_chuoi = "";
+
+            let new_arr = [];
+            for (i = 0; i < chuoi.length; i++) {
+                new_arr.unshift(chuoi[i]);
+            }
+            new_chuoi = new_arr.join('');
+
+            if (chuoi == new_chuoi) {
+                alert('là chuỗi đối xứng');
+            }else{
+                alert('Không phải là chuỗi đối xứng');
+            }
+        }
+        kiem_tra_so(kiem_tra);
+
+
+    </script>
+</body>
+
+</html>

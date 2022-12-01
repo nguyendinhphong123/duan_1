@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let a = prompt('Nhập kWh');
+    if (a <= 50){
+       let b = (a * 1.678);
+        alert('Giá điện:' + b + ' VND')
+    }else if((a > 50) && (a <= 100)) {
+        let b = (a * 1.734);
+        alert('Giá điện:' + b + ' VND')
+    }else if((a > 100) && (a <= 200)) {
+        let b = (a * 2.014);
+        alert('Giá điện:' + b + ' VND');
+    }else if((a > 200) && (a <= 300)) {
+        let b = (a * 2.536);
+        alert('Giá điện:' + b + ' VND');
+    }else if((a > 300) && (a <= 400)) {
+        let b = (a * 2.834);
+        alert('Giá điện:' + b + ' VND');
+    }else{
+        let b = (a * 2.927);
+        alert('Giá điện:' + b +'VND');
+    }
+</script>

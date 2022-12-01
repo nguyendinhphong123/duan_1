@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     let so_nguyen = [43,8,2230,2230,12,1997,98,56,6,8];
+    let max = so_nguyen[0];
+    let index = 0;
+    for(let i = 1; i < so_nguyen.length; i++) {
+        if(so_nguyen[i] > max){
+            max = so_nguyen[i];
+            index = i;
+        }
+    }
+   console.log("max: " + max + " vi tri: " + index);
+</script>

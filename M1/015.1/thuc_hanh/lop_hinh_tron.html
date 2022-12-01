@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Circle = function (bankinh){
+            this.bankinh = bankinh; 
+            this.getBankinh = function(){
+                return bankinh;
+            }
+            this.getDientich = function(){
+                return Math.PI * bankinh * bankinh;
+            }
+        }
+        let circle = new Circle(2);
+        let bankinh = circle.getBankinh();
+        let dientich = circle.getDientich();
+        console.log("bán kính: " + bankinh + "; diện tích: " + dientich);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let SinhVien = function() {
+            //Thuộc tính
+            this.ten = '';
+            this.tuoi = 0;
+            this.so_thich = [];
+
+            // phuong thuc
+            this.work = function(){
+
+            }
+            this.relax = function(){
+
+            }
+        }
+        //khoi tao doi tuong
+        let huyen = new SinhVien();
+        // Thiet lap cac gia tri cua thuoc tinh
+        huyen.ten = 'Huyen';
+        huyen.tuoi = 21;
+        // Truy cap thuoc tinh
+        console.log(huyen.ten);
+        //Truy cap phuong thuc
+        huyen.work();
+
+        let nho = new SinhVien();
+        nho.ten = 'Nho';
+        nho.tuoi = 19;
+
+        let phong = new SinhVien();
+        phong.ten = 'Phong';
+        phong.tuoi = 25;
+
+        console.log(huyen);
+        console.log(nho);
+        console.log(phong);
+    </script>
+</body>
+</html>

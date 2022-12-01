@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    So B <input type="text" name="" id="so_b" value=""><br>
+    So C <input type="text" name="" id="so_c" value=""><br>
+    <input type="button" value="Tổng" onclick="Tổng() ">
+
+    <p id="ket_qua">inner</p>
+    <script>
+        document.getElementById('nut').addEventListener('click', function(){
+
+        });
+        function Tổng() {
+        let so_b = document.getElementById('so_b').value;
+        let so_c = document.getElementById('so_c').value;
+       
+
+        let ket_qua = so_b * so_c;
+        console.log('So_B',so_b,);
+        console.log('So_C',so_c);
+        console.log(ket_qua);
+        document.getElementById('ket_qua').innerText = '<strong>' + ket_qua + '</strong>';
+        }
+    </script>
+</body>
+</html>

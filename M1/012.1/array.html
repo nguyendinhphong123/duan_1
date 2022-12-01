@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Mảng là 1 biến đặc biệt, có thể lưu trữ nhiều giá trị
+    // let books = ['Van', 'Su','Đia'];
+    // console.log(books);
+
+    // Truy cập vào từng phần tử của mảng
+    // console.log(books[0]);
+    // console.log(books[1]);
+    // console.log(books[2]);
+
+    // Thêm 1 phần tử vào mảng
+    // books.push('Sinh');
+    // console.log(books);
+
+    // Thay đổi các phần tử trong mảng
+    // books[0] = 'Van Hoc';
+    // books[1] = 'Su Hoc';
+    // books[2] = 'Dia ly';
+    // books[3] = 'Sinh Hoc';
+    // console.log(books);
+
+    // // Lấy tổng số phần tử trong mảng
+    // console.log(books.length);
+
+
+
+    // for( let i = 0; i < books.length; i++){
+    //     /*
+    //     i0
+    //     i1
+    //     i2
+
+    //     */
+    //    console.log(books[i]);
+    // }
+
+
+    let books = ['Van', 'Su','Đia'];
+    // for (let i = 0; i < books.length; i++){
+    //     books[i] = 'Sach ' + books[i];
+    // }
+
+   books = books.map( function(value) {
+        return 'Sach' + value;
+    });
+    console.log(books);
+// </script>

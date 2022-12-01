@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+         - - - #
+         - - # #
+         - # # #
+         # # # #
+
+        h1:
+            t1
+            t2
+            t3
+            s1
+        h2:
+            t1
+            t2
+            s1
+            s2
+        h3:
+            t1
+            s1
+            s2
+            s3
+        h4:
+            t0
+            s1
+            s2
+            s3
+            s4
+        
+            stop_t = 4 - h
+            stop_s = h
+        */
+       let n = 6
+       for(h = 1; h <= n;h++) {
+        let stop_t = n - h;
+        let stop_s = h;
+        for(let t = 1; t <= stop_t; t++) {
+            document.write(' - ');
+        }
+        for(let s = 1; s <= stop_s; s++) {
+            document.write(' # ');
+        }
+        document.write(' <br/>');
+       }
+
+    </script>
+</body>
+
+</html>
